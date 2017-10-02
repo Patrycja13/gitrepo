@@ -1,5 +1,6 @@
 /*
  * petla_for.cpp
+ * Program pobiera i sumuje 10 liczb, wynik drukuje na ekranie
  */
 
 
@@ -9,23 +10,26 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    int i ;
-    for ( i = 1; i < 101; i+=2 ) 
-        {//umieszczamy blok kodu który ma się powtarzać
-           
-            cout << '*' ;
-            if ( i % 10 == 0 )
-                
-                {  
-                for (j=0; j<9 ; j++)    
-                cout << "#" ;
-                cout << endl;
-                }
-            
-            
-       }
-       
-       
+
+   int suma=0 ;
+   int a,b,c,d,e,f,g,h,j,k;
+   
+    cout<<"Podaj a :";cin>>a;
+    cout<<"Podaj b :";cin>>b;
+    cout<<"Podaj c :";cin>>c;
+    cout<<"Podaj d :";cin>>d;
+    cout<<"Podaj e :";cin>>e;
+    cout<<"Podaj f :";cin>>f;
+    cout<<"Podaj g :";cin>>g;
+    cout<<"Podaj h :";cin>>h;
+    cout<<"Podaj j :";cin>>j;
+    cout<<"Podaj k :";cin>>k;
+    
+for (int i=10; i<11; i++) suma = suma +1 ;
+
+cout << "Suma :"<< a+b+c+d+e+f+g+h+j+k ;
+
+
     return 0;
 }
 
