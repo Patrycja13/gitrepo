@@ -16,8 +16,8 @@ int main(int argc, char **argv)
     int ilosc= 0;
     cout << "Wprowadzaj kolejne liczby: "<< endl;
     
-    //for (;;) 
-    while(1) // pętla nieskończona 
+      for (;;) 
+   // while(1) // pętla nieskończona 
         {   
         cin >> liczba ;
         ilosc++;
