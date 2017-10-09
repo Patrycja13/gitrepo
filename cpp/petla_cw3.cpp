@@ -7,8 +7,14 @@
 using namespace std;
 int main(int argc, char **argv)
 {
-    int i ;
-	
-	return 0;
+
+    int n =0 ;
+	cin >> n ;
+    cout <<" Podaj liczbę "<<endl;
+    for(int i=0;i<=n;i++)
+	cout <<i*i<<endl;
+    system ("pause");
+    return 0;
+    
 }
 
