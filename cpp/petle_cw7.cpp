@@ -13,11 +13,11 @@ int main(int argc, char **argv)
     cout <<"Podaj numer miesiąca";
     cin >> i;
     if (i>0 && i<13) break;
-    else cout <<"Błdne dane"<<endl;
+    else cout <<"Błędne dane "<<endl;
+    }
         
-        }
         switch (i)
-        {
+           {
            case 1:
                 cout<<"styczeń";
                 break;
