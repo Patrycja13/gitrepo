@@ -24,7 +24,7 @@ void mnozenie(int a, int b) //w funkcjii zawsze nawiasy () , funkcja do działan
 
 void podziel(int a, int b) //w funkcjii zawsze nawiasy () , funkcja do działania potrzebuje dwóch zmiennych całkowitych o nazwie a i b, zmienne nazywamy jak chcemy i są całkiem inne niż w int ai int b 
 {
-    if 
+    if (b<0 && b>0);
     cout << "Iloraz "<< a / b << endl; //nazwa parametru fukcji taka sama jak przy void sumuj 
     
     cout <<"Nie dziel przez 0 !"<<endl;
