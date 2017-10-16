@@ -13,6 +13,7 @@ int zwieksz(){
     return liczba;
 }
 
+
 int main(int argc, char **argv)
 
 {
