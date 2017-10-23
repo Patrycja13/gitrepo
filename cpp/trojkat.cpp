@@ -11,9 +11,10 @@ using namespace std;
 int main(int argc, char **argv)
 {
 	//char imie; //deklaracja zmiennej znakowej
+
     int a, b, c;
-   int obwod = 0;
-   float p = 0;
+    int obwod = 0;
+    float p = 0;
     a=b=c=0; 
 
     cout <<" Podaj boki: " << endl;
@@ -32,7 +33,7 @@ int main(int argc, char **argv)
         cout << "Obwód: " << obwod << endl;
         p = 0.5 * obwod;
         cout << "Współczynnik:" << p << endl;
-cout << "Pole" <<sqrt (p*(p-a)*(p-b)*(p-c));
+        cout << "Pole" <<sqrt (p*(p-a)*(p-b)*(p-c));
         
 }  else {
         cout << "Nie da się";
