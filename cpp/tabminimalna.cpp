@@ -5,6 +5,22 @@
  
 #include <iostream>
 using namespace std;
+void ile5(int tab[], int ile)
+{
+    int i =0;
+    int licznik=0;
+    int parzyste = 0;
+    for(i=0 ; i < ile ; i++) {
+        if(tab[i] % 5==0) 
+            licznik5++;
+        if(tab[i] % 2==0) 
+            parzyste2++;
+        
+        } 
+        cout<<"Liczby podzielne przez 5: "<<licznik5<<endl;
+        cout<<"Parzyste: "<<parzyste<<endl;
+    
+}
 void pobierzLiczby(int tab[], int ile )//po nazwie tabeli nawias kwadratowy 
 {
     int i =0;
@@ -45,6 +61,7 @@ int main(int argc, char **argv)
     pobierzLiczby(liczby, rozmiar);
     sumuj(liczby, rozmiar);
     najmniejsza(liczby, rozmiar);
+    dzielenie(liczby,rozmiar)
     
 	return 0;
 }
