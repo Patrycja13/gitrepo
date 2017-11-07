@@ -3,15 +3,14 @@
 
 import random
 
-def losuj(ileliczb,maksliczb):
+def losuj(ileliczb, maksliczb):
+    liczby = []  # pusta lista
 
-    liczby=[] #pusta lista
-
-    ile = 0 #ilość unikalnych liczb
-    #for i in range(ileliczb):
+    ile = 0  # ilość unikalnych liczb
+    # for i in range(ileliczb):
     while ile < ileliczb:
-        liczba = random.randint(0,maksliczb)
-        if liczby.count(liczba)== 0:
+        liczba = random.randint(0, maksliczb)
+        if liczby.count(liczba) == 0:
             liczby.append(liczba)
             ile += 1
 
@@ -22,14 +21,19 @@ def main(args):
     ileliczb = int(input("Ile liczb chcesz zgadywać ?"))
     maksliczb = int(input("Maksymalna losowana liczba:"))
 
-    liczby = losu(ileliczb,maksliczb)
-    typy = set()# pusty zbiór
-    for i in random(ileliczb):
-        typ = input("Podaj typ: ")#liczba na która stawia
-        typy.add(typ)
-    print(typy)
-    return 0
+    liczby = losuj(ileliczb, maksliczb)
+    typy = set()
+    # for i in range(ileliczb):
+    ile = 0
+    while ile < ileliczb:
+        typ = input("Podaj typ: ")
+        if typ not in typy:
+            typy.add(typ)
+            ile += 1
 
+    print(typy
+
+     return 0
 
 if __name__ == '__main__':
     import sys
