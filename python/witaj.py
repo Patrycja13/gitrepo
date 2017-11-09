@@ -15,6 +15,7 @@ if wiek_pythona > int (wiek): # nie ma nawiasów tylko wcięcia na 4 spacje pod 
 elif wiek_pythona < int (wiek):
     print ("Jestem młodszy! ")
 else :
-    print ("Mamy tyle samo lat! ")
+    print("Mamy tyle samo lat! ")
+    
     
 

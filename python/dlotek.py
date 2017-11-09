@@ -31,9 +31,9 @@ def main(args):
             typy.add(typ)
             ile += 1
 
-    print(typy
-
-     return 0
+    print(typy)
+    
+    return 0
 
 if __name__ == '__main__':
     import sys
