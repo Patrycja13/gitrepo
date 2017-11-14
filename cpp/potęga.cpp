@@ -7,7 +7,6 @@
 
 
 #include <iostream>
-#include <math>
 using namespace std;
 
 float potega_it(float x, int n) 
