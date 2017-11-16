@@ -10,7 +10,7 @@ def main(args):
     while b < 0:
         wynik = a ** b
         
-    print (a ** b)
+    print (a**b)
     
     return 0
 
