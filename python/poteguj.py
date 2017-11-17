@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 #  
 
-def poteguj_it(a,b);
-    wynik = 1
+def poteguj_it(a,b):
+    #wynik = 1
     while b < 0:
         wynik = a ** b 
-    return wynik 
-
+   # return wynik 
+    print (a**b)
+    
 def main(args):
     a= int(input("Podaj podstawę"))
     b= int(input("Podaj wykładnik"))
@@ -20,7 +21,7 @@ def main(args):
     #  while b < 0:
         #  wynik = a ** b
         
-    #  (a**b)
+    #  print (a**b)
     
     return 0
 
