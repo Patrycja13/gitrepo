@@ -1,0 +1,7 @@
+[user]
+	name = Patrycja13
+	email = patrycja.gawel13@onet.pl
+[push]
+	default = simple
+[core]
+	autocrlf = true
