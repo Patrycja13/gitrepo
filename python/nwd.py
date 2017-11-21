@@ -3,6 +3,7 @@
 #
 #  nwd.py
 #  znaleźć największy wspólny dzielnik dwóch liczb naturalnych całkowitych
+# wersja klasyczna
 
 
 def nwd_v1(a, b):

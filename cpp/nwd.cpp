@@ -9,7 +9,6 @@ using namespace std;
 
 int nwd(int a,int b)
 {
-    //int a,b;
     while (a!=b) 
         if (a > b)
             a = a - b;
@@ -17,6 +16,7 @@ int nwd(int a,int b)
             b = b - a;
     return a;
  }           
+ 
 int main(int argc, char **argv)
 {
 	int a,b;
