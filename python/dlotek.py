@@ -46,7 +46,7 @@ def main(args):
     liczby = losuj(ileliczb, maksliczb)
     typy = pobierz_typy(ileliczb)
 
-    #  print(liczby)
+    print(liczby)
     #  print(typy)
     trafione = set(liczby) & typy
 
