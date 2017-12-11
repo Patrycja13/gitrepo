@@ -27,13 +27,24 @@ void fib_iter(int n)
             //b = wynik;
     }
 }
+
+int fib_rek(int n)
+{
+    if (n < 2)
+        return 1;
+    else
+        return fib_rek(n - 1) + fib_rek(n - 2);
+    
+}
 int main(int argc, char **argv)
 {
 	int n;
     cout<<"Podaj liczbę"<<endl;
     cin>>n;
     
-    fib_iter(n);
+    
+    fib_rek(n);
+    
 	return 0;
 }
 

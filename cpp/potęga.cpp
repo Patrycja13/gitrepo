@@ -19,6 +19,15 @@ float potega_it(float x, int n)
     return wynik;
 }        
 
+int potega_rek( float a, int n)
+{
+    float a;
+    int n;
+    if (n == 0)
+        return 1;
+    else 
+        return potega_rek(a, n-1) * a;
+}
 
 int main(int argc, char **argv)
 {
@@ -29,7 +38,8 @@ int main(int argc, char **argv)
     cin >> x ;
     cout<<"Podaj wykładnik: "<< endl;
     cin >> n ;
-    cout<< "Potęga:" << potega_it(float x, int n) << endl; 
+    // cout<< "Potęga:" << potega_it(float x, int n) << endl; 
+    cout<< "Potęga:" << potega_rek(a,n) << endl; 
 	
 	return 0;
 }

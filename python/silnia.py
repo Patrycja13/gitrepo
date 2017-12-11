@@ -15,7 +15,7 @@ def silnia_it(n):
 def silnia_rek(n):
     if n < 2:
         return 1
-    return silnia_rek
+    return silnia_rek(n- 1) * n
 def main(args):
 
     #pobierz od uzytkownika liczbę naturalna i przypisz ją do zmiennej n
