@@ -16,6 +16,7 @@ def fib_iter(n):
     else:
         return a
 
+
 def main(args):
 
     n = int(input("Podaj wyraz ciągu: "))
