@@ -28,6 +28,7 @@ int euklides_v2(int a, int b){
     }
     return b;
 }
+
 int main(int argc, char **argv)
 {
 	int a;

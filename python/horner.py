@@ -11,6 +11,12 @@ def horner(k, tbwsp, x):
         
     return wynik
 
+def horner_rek(k, tbwsp, x):
+    
+    if :
+        return 
+    return 
+    
 def main(args):
     k = 3
     tbwsp = []
