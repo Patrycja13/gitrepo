@@ -24,10 +24,9 @@ float horner_it(int k, float tbwsp[],float x)
 
 int horner_rek(int k, float tbwsp[],float x)
 {
-    if ()
-        return ;
-    else
-        return ;
+    if (k==0)
+        return tbwsp[0] * x;
+    return horner_rek(k-1,tbwsp,x) * x + tbwsp[k];
 }
 int main(int argc, char **argv)
 {
@@ -35,7 +34,6 @@ int main(int argc, char **argv)
     float x;
     float tbwsp[4];
     int i;
-    
     cout<<"Podaj wartość x "<<endl;
     cin>> x;
     
@@ -45,7 +43,8 @@ int main(int argc, char **argv)
         cin>>tbwsp[4];
 }
     
-    cout<<horner_it(stopien,tbwsp,x)<<endl;
+    //cout<<horner_it(stopien,tbwsp,x)<<endl;
+    cout<<horner_rek(stopien,tbwsp,x)<<endl;
     
     
 	

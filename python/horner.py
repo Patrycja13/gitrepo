@@ -11,11 +11,12 @@ def horner(k, tbwsp, x):
         
     return wynik
 
+
 def horner_rek(k, tbwsp, x):
     
-    if :
-        return 
-    return 
+   if k == 0:
+        return tbwsp[0]
+    return horner_rek(k-1,tbwsp,x)*x + tbwsp[k]
     
 def main(args):
     k = 3
@@ -27,7 +28,7 @@ def main(args):
         tbwsp.append(tmp)
         #tbwsp[4]=int(input("Podaj współczynniki "))
         
-    print("Wynik ", horner(k, tbwsp, x))
+    print("Wynik ", horner_rek(k, tbwsp, x))
 
 if __name__ == '__main__':
     import sys
