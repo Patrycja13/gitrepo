@@ -1,21 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  ciag_rek.py
-#  
-# a1 =2 
-# an = an - 1*n^ + 1
+#  rekurencja1.py
+
 
 
 def rek(n):
-    if n == 1:
-        return 2
-     return ciag(n -1) * ciag (n * n) + 1
+    if n < 2:
+        return 1
+    return rek(n - 1) + rek(n - 2)
     
 def main(args):
     
     n = int(input("Podaj liczbę"))
-    print(" ", rek(n))
+    print(rek(n))
     return 0
 
 if __name__ == '__main__':
