@@ -3,52 +3,44 @@
  * 
  */
 
-
 #include <iostream>
+
 using namespace std;
 
 void wypelnij(int t[], int n, int maks)
 {
-    srand(time(NULL)); // INICJACJA GENERATORA LICZB PSEUDOLOSOWYCH
-    for(int i =0; i<n;i++)
-        {
-            t[i]=1+rand() % maks;// dzielimy modulo przez górną granicę... to losowanie liczb całkowitych z <0, max>
-            
+    srand(time(NULL)); //inicjacja generatora liczb pseudolosowych
+    for(int i = 0; i < n; i++){
+        t[i] = 1 + rand() % maks; // losowanie liczb czałowitych >0 
         }
 }
-void drukuj(int t[], int n, int maks)
+
+void drukuj(int t[], int n)
 {
-    srand(time(NULL)); 
-    for(int i =0; i<n;i++)
-        {
-            cout<<t[i]<<" ";
+    for(int i = 0; i < n; i++){
+        cout << t[i]<<" ";
         }
     cout << endl;
 }
-
-void zamien(int&a, int&b)
-{
-    int tmp=a;
+void zamien(int &a, int &b){
+    int tmp = a;
     a=b;
     b=tmp;
     
+    }
     
-}
-void sort_wybor(int t[], int n)
-{
-    cout<<"----- Sortowanie przez wybieranie-----"<<endl;
+void sort_wyb(int t[], int n){
+    cout << "-----------sortowanie przez wybieranie------------"<<endl;
     int i, j, k;
-    for (i=0; i<n; i++){
-        k=1;
-        for (j=i+1;j<n; j++){
+    for (int i = 0; i < n; i++){
+        k = i;
+        for (j = i + 1; j < n; j++){
             if (t[j]<t[k])
-             k=j;
-            
-            }
-            zamien(t[i], t[k]);
+                k=j;
+        }
+        zamien(t[i], t[k]);
     }
 }
-    
 
 int main(int argc, char **argv)
 {
@@ -56,8 +48,7 @@ int main(int argc, char **argv)
     int tab[ile];
     wypelnij(tab, ile, 20);
     drukuj(tab, ile);
-    sort_wybor(tab, ile);
+    sort_wyb(tab, ile);
     drukuj(tab, ile);
 	return 0;
 }
-

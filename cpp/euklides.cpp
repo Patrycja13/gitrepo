@@ -39,11 +39,11 @@ int main(int argc, char **argv)
 {
 	int a;
 	int b;
-	cout <<"Podaj pierwszą liczbę: "<<endl;
+	cout <<"Piersza liczba: "<<endl;
 	cin >> a;
-	cout<< "podaj drugą liczbę: "<<endl;
+	cout<< "Druga liczba:  "<<endl;
 	cin >> b;
-	cout<<"największy wspólny dzielnik: " << euklides_rek(a, b) << endl;
+	cout<<"NWD wynosi : " << euklides_rek(a, b) << endl;
 
 	return 0;
 }

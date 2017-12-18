@@ -32,11 +32,11 @@ int main(int argc, char **argv)
     //pobierz od użytkownika podstawę i wykładnik
     float a = 0;
     int n = 0;
-    cout<<"podaj podstawę"<<endl;
+    cout<<"podaj podstawe"<<endl;
     cin>>a;
-    cout<<"podaj wykładnik"<<endl;
+    cout<<"podaj wykladnik"<<endl;
     cin>>n;
-    cout<<"potęga: "<<potega_rek(a,n)<<endl;
+    cout<<"potega: "<<potega_rek(a,n)<<endl;
         
     return 0;
 }
