@@ -4,44 +4,36 @@
 #  sort_wybor.py
 # 
 #  
+from random import randint
 
-def wypelnij(t, n, maks):
+def wypelnij(lista, ile, maks):
     
-    srand(time(NULL))
-    while i < n:
-    t[i] = 1 + rand() % maks
+
+    for i in range(ile):
+        lista.append(randint(0,maks))
+    return lista
+
+
+def sort_wyb(lista):
     
-def drukuj(t[], n):
     
-    while i < n:
-    print ("  ", t[i])
+	print(" ------------- Sortowanie przez wybieranie ---------------")
+	for i in range(len(lista)):
+		k = i 
+		for j in range(i + 1, len(lista)):
+			if lista[j] < lista[k]:
+				k = j
+                
+        lista[i], lista[k] = lista[k], lista[i]
+    return lista
     
-def zamien(a, b):
-    
-    tmp = a
-    a=b
-    b=tmp
-    
-def sort_wyb(t[], n):
-    print("--------Sortowanie przez wybieranie-------")
-     
-    while i<n:
-        k=i
-        while j<n:
-            j=i+1
-            if t[j]<t[k]:
-                k=j
-        zamien(t[i], t[k]
-        
 def main(args):
     
-    const ile = 10
-    tab[ile]
-    wypelnij(tab, ile, 20)
-    drukuj(tab, ile)
-    sort_wyb(tab, ile)
-    drukuj(tab, ile)
+    lista = []
+    print(wypelnij(lista,10,20))
+    print(sort_wyb(lista))
     return 0
+
 
 if __name__ == '__main__':
     import sys
