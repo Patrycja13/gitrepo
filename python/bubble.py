@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  sort_wybor.py
-# 
+#  bubble.py
+#  
 #  
 from random import randint
 
@@ -14,24 +14,24 @@ def wypelnij(lista, ile, maks):
     return lista
 
 
-def sort_wyb(lista):
+def sort_bubble(lista):
     
     
-	print(" ------------- Sortowanie przez wybieranie ---------------")
+	print(" ------------- Sortowanie bąbelkowe ---------------")
 	for i in range(len(lista)):
-		k = i 
+		# k = i 
 		for j in range(i + 1, len(lista)):
-			if lista[j] < lista[k]:
-				k = j
-                
-        lista[i],lista[k] = lista[k],lista[i]
+			if lista[j] > lista[j+1]:
+
+        lista[j],lista[j+1] = lista[j+1],lista[j]
+        
     return lista
     
 def main(args):
     
     lista = []
     print(wypelnij(lista,10,20))
-    print(sort_wyb(lista))
+    print(sort_bubble(lista))
     return 0
 
 
