@@ -11,7 +11,7 @@ def wyszuk_liniowe(l, e):
     return -1
 
 
-def wyszuk_binarne(l, e):
+def wyszukiwanie_bin_iter(l, e):
     lewy, prawy = 0, len(l) - 1
     while lewy < prawy:
         srodek = floor((lewy + prawy) / 2)
@@ -20,24 +20,26 @@ def wyszuk_binarne(l, e):
         else:
             lewy = srodek + 1
 
-    if l[lewy] == 0:
+    if l[lewy] == e:
         return lewy  # element znaleziono
 
-    return -1
+    return -1  # elementu nie znaleziono
 
-def wyszuk_bin_rek(lewy, prawy, lista, el):
 
-    if lewy < prawy:
+def wyszukiwanie_bin_rek(lewy, prawy, lista, el):
+
+    if lewy > prawy:
         return -1  # elementu nie znaleziono
 
     srodek = floor((lewy + prawy) / 2)
     if el == lista[srodek]:
-        return srodek  # element znaleziony
+        return srodek  # element znaleziono
 
     if el < lista[srodek]:
-        return wyszuk_bin_rek(lewy, srodek - 1, lista, el)
+        return wyszukiwanie_bin_rek(lewy, srodek - 1, lista, el)
     else:
-        return wyszuk_bin_rek(srodek + 1, prawy, lista, el)
+        return wyszukiwanie_bin_rek(srodek + 1, prawy, lista, el)
+
 
 def main(args):
     lista = [4, 3, 7, 0, 2, 3, 1, 9, -4]
@@ -45,7 +47,7 @@ def main(args):
     print(wyszuk_liniowe(lista, e))
     lista.sort()
     print(lista)
-    print(wyszuk_binarne(lista, e))
+    print(wyszuk_bin_iter(lista, e))
     print(wyszuk_bin_rek(0, len(lista) - 1, lista, el))
     return 0
 
