@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T08:31:32+01:00
+
+====== Home ======
+Created piątek 01 grudzień 2017
+
+tbwsp[0]- 1 element tabeli
+tbwsp[1]- 2 element 
+
+for(i=0; i<4 ;i++)  2 człon ile razy 
+

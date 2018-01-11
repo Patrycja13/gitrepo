@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-11T08:19:09+01:00
+
+====== Algorytmy ======
+Created czwartek 11 styczeń 2018
+
+**Własności algorytmów**
+1. Poprawność (całkowicie lub częściowo poprawne )
+
+Częściowo poprawne - nie jesteśmy w stanie sprawdzić dla wszystkich danych jego poprawnośći 
+
+Indukcja -  założenie uniwersalnego wniosku, że  algorytm jest poprawny dla wszystkich liczb naturalnych co wnioskujemy z pojedynczych informacji
+
+
+2. Skończoność
+- złożoność
+- efektywność
+
+Błędy
+- składniowe
+- 
