@@ -6,6 +6,7 @@ Creation-Date: 2018-01-11T08:19:09+01:00
 Created czwartek 11 styczeń 2018
 
 **Własności algorytmów**
+
 1. Poprawność (całkowicie lub częściowo poprawne )
 
 Częściowo poprawne - nie jesteśmy w stanie sprawdzić dla wszystkich danych jego poprawnośći 

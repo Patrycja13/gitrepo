@@ -10,3 +10,6 @@ tbwsp[1]- 2 element
 
 for(i=0; i<4 ;i++)  2 człon ile razy 
 
+
+Notacja wykładnicza 
+e- wykładnik (e-17)- przesuwamy przecinek o 17 miejsc
