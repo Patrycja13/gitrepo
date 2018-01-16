@@ -7,17 +7,25 @@ Created czwartek 11 styczeń 2018
 
 **Własności algorytmów**
 
-1. Poprawność (całkowicie lub częściowo poprawne )
+1. __Poprawność (całkowicie lub częściowo poprawne )__
 
 Częściowo poprawne - nie jesteśmy w stanie sprawdzić dla wszystkich danych jego poprawnośći 
 
 Indukcja -  założenie uniwersalnego wniosku, że  algorytm jest poprawny dla wszystkich liczb naturalnych co wnioskujemy z pojedynczych informacji
 
 
-2. Skończoność
-- złożoność
-- efektywność
+2. __Skończoność__
+3. __Złożoność__
+
+**Złożoność pamięciowa**  - mówi jak dużo pamięci potrzebuje program do działania, bardziej złożone pod tym wzgędem są algorytmy rekurencyjne(funkcja musi wywołać samą siebie, podczas tego musi zapamiętać adres spod którego się wywołuje(bo tworzona jest nowa funkcja)i stan swoich aktualnych zmiennych ).
+Algorytmy rek są bardziej złożone niz iter. 
+
+**Złożoność czasowa** - nie bierzemy pod uwagę czasu wykonania algorytmu, a jak dużo operacji podstawowych wykonuje. Chodzi o rząd wielkośći ()
+
+
+4. __Efektywność__
 
 Błędy
 - składniowe
-- 
+-
+
