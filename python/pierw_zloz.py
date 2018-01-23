@@ -10,7 +10,7 @@ def main(args):
     
     n = int(input("Podaj liczbe: "))
     i = 2
-    while n % i = 0:
+    whilen n % i = 0:
         if i * i >= n:
             print("Liczba złożona ")
             break
