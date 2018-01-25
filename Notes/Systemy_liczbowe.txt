@@ -7,7 +7,8 @@ Created wtorek 23 styczeń 2018
 
 Wyrózniamy dwa rodzaje sposobów zapisywania liczb :
 
-__System addytywny__
+== System addytywny ==
+
 I
 II
 III
@@ -21,13 +22,14 @@ M-1000
 2018 - MMXVIII
 1999 - MCMXCIX
 
-__System pozycyjny__
+== System pozycyjny ==
+
 123(10 "system o podstawie 10" ) = 1*10^2 + 2 *10^1 +3 * 10^0 
 145(5)- taka liczba niemożliwa bo zaczynamy od 0 i do 5 nie dochodzi(5 nie  może wystąpić ), **do dyspozycjii mamy cyfry od 0 do podstawy - 1**
 
 **143(5)- 1*5^2 + 4*5^1 + 3*5^0 = 24+20+3 = 48(10)** 
 
-__System binarny__
+== System binarny ==
 
 tylko 1 i 2 
 101001(2) = 2^5+ 2^3 + 1 = 32+8+1 = 41  //np. 2^4 nie bo sie zeruje 
@@ -36,9 +38,61 @@ tylko 1 i 2
 w 8 bitach 256 unikalnych liczb od 0 do 256
 w 3 bitach max 8 stanów razem ze stanem 0 
 
-__System 16-kowy__
+== System 16-kowy ==
+
 Ma do dyspozycji 16 liczb 
 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 A-10 B-11 itd.
 ABC- 10*16^2 + 11*16^1+12
 
+== Konwersja liczby dziesiętnej ==
+
+129/2 =  64 reszty 1 
+64/2=32 reszty 0
+32/2=16 reszty 0
+16/2=8 reszty 0
+8/2=4 reszty 0
+4/2= 2 reszty 0
+2/2=1 reszty 0 
+1/2 = 0 reszty 1
+
+spisujemy liczby reszt od konca i dostajemy liczbę binarną
+129(10)= 10000001(2)
+--------------------
+119/2=59 reszty 1** bit najbardziej znaczący**
+59/2 = 29 reszty 1
+29/2= 14 reszty 1
+14/2=7 reszty 0
+7/2=3 reszty 1
+3/2= 1 reszty 1
+1/2= 0 reszty 1 bit najmniej znaczący 
+
+1110111= 2^6+2^5+2^4+2^2+2^1+1 = 64+32+16+4+2+1=119 **do zapisania tej liczby 7 bitów** 
+
+--------------------
+119(10)-> 167(8)
+
+119/8=14 reszty 7
+14/8= 1 reszty 6
+1/8 = 0 reszty 1 
+
+1*8^2+ 6*8^1 + 7 = 64+48+7 = 119 
+
+--------------------------------------------------- 
+119/16= 7 reszty 7
+7/16= 0 reszty 7
+
+119(10)-> 77(16)
+77(16)= 7*16+7 
+--------------------
+
+__Jeśli liczbę binarną podzielisz od prawej po tyle która jest to potęga 2 __
+__(np. 8 jest 3 potęgą więc robimy grupy 3 bitowe zaczynając od bitów mniej znaczących czyli od prawej strony) __
+__i potraktujesz jako osobnecyfry utworzy liczbę dziesiętną__ 
+
+np.  11110111(16)
+dzielimy po 4 bo 2^4=16 
+
+ 1111     |      0111 
+-----                -------
+15 (więc F)      7         ---> F7
