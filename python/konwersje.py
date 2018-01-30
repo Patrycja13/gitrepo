@@ -27,11 +27,23 @@ def dec2other():
         liczba, konwersja1(liczba, podstawa), podstawa))
     """ to pojawi sie po kolei w {} """
 
+
 def konwersja2(liczba, podstawa):
-    """funkvja nkonwertuje liczbe o dowolnej podstawie na system 10"""
+""" 745(8) = 7 * 8^2 + 4*8^1 + 5 """
+
+    liczba10 = 0
+    potega = len(liczba) - 1
+	for cyfra in liczba:
+        if not cyfra.isdigit():
+            liczba10 += ord(i.upper)  # ord przyjuje znak i zwraca kod, a chr odwrotnie
+        liczba10 += int(cyfra) * (podstawa ** potega)
+		potega -= 1
 
 def other2dec():
-    """Pobiera podstawe i liczbe od użytkownika"""
+
+    system = int(input("podaj system: "))
+    licz = input("podaj liczbę: ")
+print(konwersja2(licz, system))
 
 
 def main(args):
