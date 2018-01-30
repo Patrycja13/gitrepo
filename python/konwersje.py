@@ -29,21 +29,27 @@ def dec2other():
 
 
 def konwersja2(liczba, podstawa):
-""" 745(8) = 7 * 8^2 + 4*8^1 + 5 """
 
     liczba10 = 0
     potega = len(liczba) - 1
 	for cyfra in liczba:
         if not cyfra.isdigit():
-            liczba10 += ord(i.upper)  # ord przyjuje znak i zwraca kod, a chr odwrotnie
-        liczba10 += int(cyfra) * (podstawa ** potega)
+            liczba10 += (ord(i.upper()) - 55) * (podstawa ** potega)  # ord przyjuje znak i zwraca kod, a chr odwrotnie
+        else:
+            liczba10 += int(cyfra) * (podstawa ** potega)
 		potega -= 1
+    retorn liczba10
 
 def other2dec():
 
-    system = int(input("podaj system: "))
-    licz = input("podaj liczbę: ")
-print(konwersja2(licz, system))
+    podstawa = int(input("podaj podstawę: "))
+    liczba = input("podaj liczbę: ")
+    for i in liczba:
+        if i.isdigit():
+            cyfra = int(i)
+        else:
+            cyfra = ord
+    print(konwersja2(licz, system))
 
 
 def main(args):
@@ -51,7 +57,7 @@ def main(args):
           "<2;16> lub odwrotnie.")
     dec2other()
     other2dec()
-    """program porzekształca liczbe o dowolnej podstawie
+    """program porzekształca liczbe o dowolnej podstawie"""
     return 0
 
 

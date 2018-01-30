@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:29:19+01:00
+
+====== Kompresja ======
+Created wtorek 30 styczeń 2018
+
+Zmniejszanie rozmiaru czegoś w celu zachowania intotnych informacji
+kompresja to np odtwarzanie filmów itp
+
+Rodzaje kompresji
+1. KOmpresja stratna
+a) dżwięk - MP3, OGG
+b) obraz - JPG, PNG
+c ) filmy - MPEG1,MPG2,MPG4, .avi, .mp4
+
+Jakość kompresji zależy od przepływości b/s, Kb/s, Mb/s
+
