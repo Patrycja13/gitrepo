@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-06T10:04:07+01:00
+
+====== Szyfrowanie ======
+Created wtorek 06 luty 2018
+
+polega na ukryciu danych np tekstu (kryptografia)
+otrzymujemy w ten sposób szyfrogram
+odczytanie ukrytej informacji to deszyfracja (kryptoanaliza)
+
+Kryptografia+ kryptoanaliza = kryptologia
+
+Do odszyfrowania potrzebny jest:
+- algorytm szyfrowania
+- klucz

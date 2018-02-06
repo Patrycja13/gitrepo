@@ -32,11 +32,22 @@ The rain <3,3> Sp<9, 4> falls m <11,3>ly on t< 34, 3 > pl<15,3>.
 6 bitów+2 bity = 8 bitów
 33 bajty / 44 bajty * 100 = ~ 75%
 
-Współczynnik kompresji
-Rc = Vk- wielkośc skompresowana / Vnk- nieskomresowana * 100
+Współczynnik kompresji - Rc 
+
+**Rc = Vk- wielkośc skompresowana / Vnk- nieskomresowana * 100**
+
 100% - Rc — informacja o ile zmniejszył się kompresowany zbiór 
 
 Rc 7z=  218,4 kB /633,1 kB * 100 = 34,5 %
 
 Rc zip = 340,7 kB /633,1 kB * 100 = 54 %
 
+Streamery - 
+"archiwum'' - kopia czegoś
+
+Formaty plików archiwów:
+
+ZIP
+RAR
+7ZIP
+TAR
