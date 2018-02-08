@@ -9,8 +9,15 @@ polega na ukryciu danych np tekstu (kryptografia)
 otrzymujemy w ten sposób szyfrogram
 odczytanie ukrytej informacji to deszyfracja (kryptoanaliza)
 
-Kryptografia+ kryptoanaliza = kryptologia
+__Kryptografia+ kryptoanaliza = kryptologia__
 
 Do odszyfrowania potrzebny jest:
 - algorytm szyfrowania
 - klucz
+
+__Rodzaje szyfrów :__ 
+podstawieniowe - szyfr cezara
+przestawieniowe - zapis tekstu w wierszu o ustalonej długości
+Klucz to ilośc kolumn, na które dzielimy tekst
+
+KLucz - powinien być mniejszy od połowy tekstu
