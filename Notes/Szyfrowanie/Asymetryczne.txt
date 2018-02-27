@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-27T10:06:31+01:00
+
+====== Asymetryczne ======
+Created wtorek 27 luty 2018
+
+HTTPS - szyfrowana wersja protkokołu http
+
+**Klucz publiczny **po wygenerowaniu klucza możemy go udostępnić(znajomym, serwisom, instytucjom) służy aby odczytać to co szyfrujemy kluczem prywatnym, jeśli któs wysyła coś do nas szyfruje kluczem publiczbym , ale my odbieramy **kluczem prywatnym.** 
+
+Klucze są nieodłączną parą. 
+
+Pretty Good Privacy - do szyfrowania poczty elektronicznej 
+
+Najpopularniejszym algorytmem do generowania kluczy jest algorytm RSA.
+Opiera się na parach dużych liczb pierwszych.Trudno ten algorytmn złamać. 
+
+Podpis elektroniczny jest możliwy , jeśli 
+Urzędy certyfikacji- instytucja generująca klucze prywatne i publiczne w czyimś imieniu i wystawia certyfikat 
+
+Klucz publiczy i prywatny nie występują w postaci jawnej, tylko są zachaszowane za pomoca funkcji skrótu.
+Funkcja skrótu - przyporządkowuje dowolnej liczbie liczbe krótką posiadającą stały rozmiar. Ma zagwarantować , że nie dwóch takich samych wiadomości o tej samej liczbie.  

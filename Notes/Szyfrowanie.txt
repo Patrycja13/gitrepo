@@ -21,3 +21,5 @@ przestawieniowe - zapis tekstu w wierszu o ustalonej długości
 Klucz to ilośc kolumn, na które dzielimy tekst
 
 KLucz - powinien być mniejszy od połowy tekstu
+
+

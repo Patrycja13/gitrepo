@@ -25,7 +25,4 @@ Algorytmy rek są bardziej złożone niz iter.
 
 4. __Efektywność__
 
-Błędy
-- składniowe
--
 
