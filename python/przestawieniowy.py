@@ -2,16 +2,18 @@
 # -*- coding: utf-8 -*-
 
 def szyfruj(tekst, klucz):
-
     reszta = len(tekst) % klucz
-    if reszta:'''  jeżeli reszta 0 to się nie wykona, jeśli nie to wykona'''
+    if reszta:
         tekst += (klucz - reszta) * "."
+    
+    szyfrogram = ""
 
-        szygrogram = ""
-        for i in range(klucz):
-            for j in range(int(len(tekst) / klucz)):
+    for i in range(klucz):
+        for j in range(int(len(tekst) / klucz)):
+            print (i + j * klucz, tekst[i + j * klucz])
+            szyfrogram += tekst[i + j * klucz]
+    return szyfrogram 
 
-            szyfrogram += tekst[i + klucz]
 
 def deszyfruj(szyfrogram, klucz):
     tekst = ""
@@ -19,22 +21,21 @@ def deszyfruj(szyfrogram, klucz):
         for j in range(klucz):
             # print (i + j * klucz, szyfrogram[j + i * klucz])
             tekst += szyfrogram[i + (j * int(len(szyfrogram) / klucz))]
+        
+    return tekst 
 
-    return tekst
+
 
 def main(args):
-
     tekst = input("Podaj tekst: ")
-    klucz = int(input("Klucz: "))
-    while 2 * klucz > len(tekst):
-        klucz = int(input("Klucz "))
-
-    szyfrogram = szyfruj_cezar(tekst, klucz)
+    klucz = int(input("Podaj klucz: "))
+    while(2 * klucz > len(tekst)):
+        klucz = int(input("Podaj klucz: "))
+    szyfrogram = szyfruj(tekst, klucz)
     print(szyfrogram)
     print(deszyfruj(szyfrogram, klucz))
-    return 0
 
-
+    return 0 
 
 if __name__ == '__main__':
     import sys
