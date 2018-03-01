@@ -21,3 +21,9 @@ Urzędy certyfikacji- instytucja generująca klucze prywatne i publiczne w czyim
 
 Klucz publiczy i prywatny nie występują w postaci jawnej, tylko są zachaszowane za pomoca funkcji skrótu.
 Funkcja skrótu - przyporządkowuje dowolnej liczbie liczbe krótką posiadającą stały rozmiar. Ma zagwarantować , że nie dwóch takich samych wiadomości o tej samej liczbie.  
+Najczęściej wykorzystywane 
+CRC
+MDS
+SHA
+
+ODCISK PALCA - CIĄG CYFR WYGENEROWANY PRZEZ PEWNY ALGORYTM PRZY UŻYCIU FUNKCJI SKRÓTU (suma kontrolna)
