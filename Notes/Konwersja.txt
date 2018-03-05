@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:28:45+01:00
+
+====== Konwersja ======
+Created wtorek 30 styczeń 2018
+

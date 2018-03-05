@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-05T12:13:50+01:00
+
+====== Model ======
+Created poniedziałek 05 marzec 2018
+
+...
+Procesor ma ograniczoną pamięć wewnętrzną
+
+Pamięć 
+a) ROM - **Pamięć tylko do odczytu**  (ang. read-only memory) – pamięć półprzewodnikowa urządzenia elektronicznego, w szczególności komputera, z której dane można tylko odczytywać, natomiast zapis jest niemożliwy. Ma oprogramowanie sprzętowe Firmwear zawiera BIOS (podstawowy system wejścia i wyjścia)
+BIOS aktualnie zstąpiony UEFI(dodano obsługe myszki, interfejs graficzny, dodatkowe zabezpieczenia)
+b) RAM - pamięć o dostępie swobodnym – podstawowy rodzaj pamięci cyfrowej. W każdym momencie można zażądać dostępu do dowolnego elementu(komórki) tej pamięci. 
+
+Pamięć RAM w momencie braku zasilania nie jest w stanie przechować niczego
+
+ROM - zapisane raz jest juz na stałę 
+

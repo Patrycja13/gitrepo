@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-16T09:56:18+01:00
+
+====== Złożoność ======
+Created wtorek 16 styczeń 2018
+
+**Złożoność pamięciowa**  - mówi jak dużo pamięci potrzebuje program do działania, bardziej złożone pod tym wzgędem są algorytmy rekurencyjne(funkcja musi wywołać samą siebie, podczas tego musi zapamiętać adres spod którego się wywołuje(bo tworzona jest nowa funkcja)i stan swoich aktualnych zmiennych ).
+Algorytmy rek są bardziej złożone niz iter. 
+
+**Złożoność czasowa** - nie bierzemy pod uwagę czasu wykonania algorytmu, a jak dużo operacji podstawowych wykonuje
+
+
+RAM - jeśli napięci  (3V - 5V)  to 1
+ok. 0,2 V to logiczne 0 
+
+Rejestry procesorów obecnie 64 bit
+x86-64 (AMD64 lub x64)
+Do architektury procesora musi być dostosowana architektura 
