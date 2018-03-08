@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-08T08:03:47+01:00
+
+====== Systemy Microsoft ======
+Created czwartek 08 marzec 2018
+
+MS-DOS – system operacyjny stworzony przez firmę Microsoft na podstawie nabytego przez nią kodu źródłowego systemu QDOS stworzonego przez Seattle Computers. Jest to wersja systemu operacyjnego DOS przeznaczona dla komputerów IBM-PC.
+
+**Polecenia w DOS emulator** 
+dir - zawartość katalogu
+dir/? przełączniki 
+cd tmp - przejście do katalogu 
+edit -  edytor tekstu 
+cd .. - wchodzenie na dysk c
+edit config.ss 
+
+lewy ALT+ pierwsza litera nazw u góry XD 
+np.(alt + f - tworzenie nowego i zapisywanie )
+
+plik ma mieć rozszerzenie  . i trzy litery (tu .txt)
+
+**DUŻE OGRANICZENIA:**
+
+W DOS nazwa pliku tylko 8 znaków
+Microsoft mogł pomieścić 640 Kbajt pamięci 
+Działał w dwóch trybach 
+W trybie rzeczywistym procesora - duże ograniczenia , bo rejestry procesorów 16 bitowe 
+Umożliwiał pracę jednemu użytkownikowi i wykonywał jedno zadanie w jednym momencie(jednozadaniowy)
+
+Od czasu DOS przyjęło sie plikom nadawać atrybuty 
+s - system
+r - tylko do odczytu
+h- ukryty 
+
+Największy rozmiar programu jaki był w stanie obsłużyć 64 KB
+
+**Windows 3.1**
+umożliwiał łączenie komputerów w siec lokalną. Duży krok jeśli chodzi o systemy microsoft, aby przerzucić ludzi na interfejs graficzny( pasek zadań itp.). Spopularyzował ikony.Pojawia się narzędzie do zarządzania sytemem, programami. Obsługa myszką zamiast wpisywania poleceń.
+Wprowadza pojęcie wielozadaniowości(można uruchomić kilka programów i działaja one obok siebie jednocześnie). Istnieje terminal - umożliwia przyłączanie sie do drugiego komputera.
+
+**Pierwsza przeglądarka - Netscape Navigator 1994** 
+
+**Microsoft Windows 95**  
+dopracowane technologie 
+- DDE - dynamiczna wymiana danych (między różnymi aplikacjami )
+- OLE - łączenie i osadzanie obiektów 
+**W pierwszej wersji bezużuteczny, ponieważ** 
+Microsoft twierdził, że systemy trzeba rozwijać w dwóch liniach
+NT - firmy
+Desktop -  dla zwykłego użytkownika 
+Stworzył przeglądarkę Explorer - Microsoft 
+
+**Windows 98**
+obsługa USB
+[[ActivX]] - uruchamia zewnętrzne wtyczki realizujące jakieś zadania(żle napisane, bo dostawały się przez to wirusy)

@@ -79,6 +79,8 @@ spisujemy liczby reszt od konca i dostajemy liczbę binarną
 1*8^2+ 6*8^1 + 7 = 64+48+7 = 119 
 
 --------------------------------------------------- 
+1101001 = 6^6 + 6^5 + 6^3 + 6 
+
 119/16= 7 reszty 7
 7/16= 0 reszty 7
 
