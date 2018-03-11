@@ -54,3 +54,38 @@ StworzyÅ‚ przeglÄ…darkÄ™ Explorer - Microsoft
 **Windows 98**
 obsÅ‚uga USB
 [[ActivX]] - uruchamia zewnÄ™trzne wtyczki realizujÄ…ce jakieÅ› zadania(Å¼le napisane, bo dostawaÅ‚y siÄ™ przez to wirusy)
+
+Nowoœci w systemie Microsoft10
+
+
+Zwarty widok menu Start 
+Mo¿na wyeliminowaæ z menu Start listê z przegl¹dem wszystkich zainstalowanych programów..
+
+Folder na kafelki
+Postêpujemy podobnie jak w smartfonie: przeci¹gamy jeden kafelek nad drugi, upuszczamy go, by utworzyæ kafelek zbiorczy. Do takiego kafelka mo¿na dodaæ kolejne skróty. Klikniêcie na kafelek-folder spowoduje rozwiniêcie jego zawartoœci.
+
+Rozbudowie przegl¹darkI Edge. 
+
+Nowy podgl¹d zak³adek i funkcje archiwizacji, ale te¿ lepsze wsparcie dla przegl¹dania e-booków.  Microsoft chce uczyniæ Edge narzêdziem do czytania i zarz¹dzania kolekcj¹ cyfrowych ksi¹¿ek. Bêdziemy mogli je w przysz³oœci kupiæ bezpoœrednio w  Sklepie Windows, a przegl¹darka przeczyta je nam na ¿yczenie na g³os. Doczekaliœmy siê tak¿e wsparcia dla wielordzeniowych procesorów i funkcji blokowania treœci Flash. Te funkcje maj¹ poprawiæ poziom bezpieczeñstwa, wydajnoœæ i stabilnoœæ. Dziêki temu Microsoft Edge ma poprawiæ nadszarpniêty wizerunek twórcy przegl¹darek.  
+
+A) Przeczytaj póŸniej Przegl¹darkê Edge wyposa¿ono w mo¿liwoœæ zachowania otwartych zak³adek w celu póŸniejszego ich przejrzenia. Klikniêciem na mo¿na przenieœæ wszystkie otwarte zak³adki w chronologicznej kolejnoœci do schowka Karty zapisane na póŸniej. Jednym klikniêciem przywrócimy je do okna Edge. Zapisane w schowku zak³adki mo¿na udostêpniaæ znajomym.
+B)Podgl¹d zak³adek Przegl¹darka Edge pomo¿e nam teraz podczas wyszukiwania odpowiedniej zak³adki przy wielu jednoczeœnie otwartych. Po klikniêciu nad paskiem adresu na strza³kê na liœcie zak³adek otworzymy miniatury otwartych stron.
+
+Automatyczne narzêdzie do utylizacji przez system zalegaj¹cych w nim niepotrzebnych danych. 
+
+Creators Update wspiera teraz urz¹dzenia dla niewidomych obs³uguj¹ce alfabet Braille'a. Niedowidz¹cy doceni¹ ulepszon¹ funkcjê czytania na g³os oraz tryb wysokiego kontrastu podczas wyœwietlania aplikacji. 
+
+Nowe zabezpieczenia przed z³oœliwym oprogramowaniem.
+Microsoft usprawni³ us³ugê Windows Defender oraz doda³ do niej kilka ciekawych funkcji. Pierwsz¹ z nich jest Exploit Protection, czyli nowy mechanizm do zabezpieczania przed niebezpiecznymi eksploitami, który de facto pochodzi z rozwi¹zania EMET. Windows porzuci³ te¿ na ustawieniach domyœlnych obs³ugê protoko³u SMBv1, który okaza³ siê wadliwy i doprowadzi³ do kilku niedawnych epidemii ransomware. 
+
+£atwiejsza instalacja linuksowych œrodowisk.
+
+Ograniczanie zasilania dla aplikacji.
+
+Mechanizm zarz¹dzania energi¹ w Windows 10 zyska³ now¹ funkcjê, jak¹ jest ograniczanie zasilania dla aplikacji. Zadzia³a ona na razie tylko na procesorach Intela generacji Skylake lub nowszej. Dziêki niej system, gdy wykryje, ¿e jest na zasilaniu bateryjnym, mo¿e skuteczniej zarz¹dzaæ energi¹ i prac¹ procesora. A konkretniej potrafi rozró¿niæ otwarte aplikacje i aplikacje tle, dla tych drugich ustawiaj¹c niski, energooszczêdny priorytet.  
+
+Œrodowisko uruchomieniowe dla Windows Mixed Reality.
+
+Windows 10 bêdzie teraz zawiera³ natywn¹ obs³ugê dla wszystkich zgodnych ze standardem Windows Mixed Reality gogli. To umo¿liwia wejœcie na rynek tañszych urz¹dzeñ do mieszanych rzeczywistoœci, które zamiast dzia³aæ samodzielnie wykorzystuj¹ do obliczeñ urz¹dzenie towarzysz¹ce, a wiêc naszego peceta. 
+
+
