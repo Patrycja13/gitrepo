@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-12T11:56:57+01:00
+
+====== Linux ======
+Created poniedziałek 12 marzec 2018
+
+To nazwa tylko jądra.
+Użytkownik potrzbuje interfejsu aby z tego korzystać 
+Jeśli do powłoki dołożymy interfejs to dostajemy w ,miarę kompletny system - dystrybucja 
+W 1993 pierwsza wersja Sleckwere , a nastepnie Debian, Linux Mint i ..
+
+
+ SYSTEM 
+1.PŁYTA GŁÓWNA - dyskietek stacja wyłącz
+2.PROCESOR- włącz PAE/NX
+
+DŹWIĘK - wyłącz 
+
+iso - format instalacyjny
+Pliki systemowe w systemie Windows trafiaja do katalogu Windows (na partycji C )
+
+W systemie Windows programy domyślnie instalowane sa w programie fires również na dysku c
+
+Na dysku c tworzony jest katalog users 
+
+W linuksie stosuje sie partycje, które oznaczane są za ppmocą litery , : oraz ; 
+[[/dev/sda1/-]] pierwsza partycja dysku 
+[[/urządzenie/dysk]]
+
+Linux obsługuje każdy system plików 
+
+**Systemy stosowane na dysku** 
+
+Windows zainstalowany na ntfs - brak ograniczeń, nie potrafi tylko czytać ext4.
+
+Dawniej fat jako system plików. miał duże ograniczenia
+
+ext4 -  udany system odporny na awarie w Linux. POtrafi czytać ntfs
+W Win ważną rzeczą systemową jest plik wymiany, duży plik tworzony w katalogu głównym   
+W Linux tez jest możliwośc tworzenia plików wymiany
+Swap - partycja wymiany w Linux/ plik wymiany w Windows 
+
+Gnom- srodowisko 3.2 i cyferka xd 
+ustawienia w jednym oknie 
+
+Do instalacji linuxa dwie partycje - główna , w której montowany jest główny system(programy i jadro) oraz -na dane użytkownika oraz trzecia - partycja wymiany(bardzo często )
+
+
+
+

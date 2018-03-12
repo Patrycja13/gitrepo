@@ -55,6 +55,7 @@ Stworzył przeglądarkę Explorer - Microsoft
 obsługa USB
 [[ActivX]] - uruchamia zewnętrzne wtyczki realizujące jakieś zadania(żle napisane, bo dostawały się przez to wirusy)
 
+
 Nowo�ci w systemie Microsoft10
 
 
