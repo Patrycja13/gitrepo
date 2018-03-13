@@ -46,6 +46,21 @@ ustawienia w jednym oknie
 
 Do instalacji linuxa dwie partycje - główna , w której montowany jest główny system(programy i jadro) oraz -na dane użytkownika oraz trzecia - partycja wymiany(bardzo często )
 
+Partycja - obszar dysku twardego
+-podstawowe (główne) - używa Master Boot Record - max 4 partycje  
+- logiczne -  można tworzyc wiele 
+GPT - standard zapisu informacji o partycjach, pierwsza przyjmuje rolę MBR - na którym zapisane sa pozostałe parycje, ich miejsca , można tworzyc nieskończenie wiele 
+
+**XZSAWQ21**
+**HASŁO     xdddd**
+
+Instalacja w Winows i Linux
+ W 
+
+formaty instalatorów:  
+- wykonywalne .exe lub .msi
+- 
+
 
 
 
