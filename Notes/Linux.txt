@@ -7,7 +7,7 @@ Created poniedziałek 12 marzec 2018
 
 To nazwa tylko jądra.
 Użytkownik potrzbuje interfejsu aby z tego korzystać 
-Jeśli do powłoki dołożymy interfejs to dostajemy w ,miarę kompletny system - dystrybucja 
+Jeśli do powłoki dołożymy interfejs to dostajemy w miarę kompletny system - dystrybucja 
 W 1993 pierwsza wersja Sleckwere , a nastepnie Debian, Linux Mint i ..
 
 
@@ -24,35 +24,41 @@ W systemie Windows programy domyślnie instalowane sa w programie fires równie�
 
 Na dysku c tworzony jest katalog users 
 
-W linuksie stosuje sie partycje, które oznaczane są za ppmocą litery , : oraz ; 
+W linuksie stosuje sie partycje, które oznaczane są za pomocą litery , : oraz ; 
 [[/dev/sda1/-]] pierwsza partycja dysku 
 [[/urządzenie/dysk]]
 
 Linux obsługuje każdy system plików 
 
-**Systemy stosowane na dysku** 
+
+== Systemy stosowane na dysku ==
 
 Windows zainstalowany na ntfs - brak ograniczeń, nie potrafi tylko czytać ext4.
 
 Dawniej fat jako system plików. miał duże ograniczenia
 
-ext4 -  udany system odporny na awarie w Linux. POtrafi czytać ntfs
+ext4 -  udany system odporny na awarie w Linux. pOtrafi czytać ntfs
 W Win ważną rzeczą systemową jest plik wymiany, duży plik tworzony w katalogu głównym   
 W Linux tez jest możliwośc tworzenia plików wymiany
 Swap - partycja wymiany w Linux/ plik wymiany w Windows 
 
-Gnom- srodowisko 3.2 i cyferka xd 
+
+
+Gnom(z ang. skrzat)- srodowisko graficzne w ubutu 3.2 i cyferka xd 
 ustawienia w jednym oknie 
+
+KDE - główny konkurent gnoma, ma bardziej tradycyjny wygląd 
+
 
 Do instalacji linuxa dwie partycje - główna , w której montowany jest główny system(programy i jadro) oraz -na dane użytkownika oraz trzecia - partycja wymiany(bardzo często )
 
 Partycja - obszar dysku twardego
 -podstawowe (główne) - używa Master Boot Record - max 4 partycje  
 - logiczne -  można tworzyc wiele 
-GPT - standard zapisu informacji o partycjach, pierwsza przyjmuje rolę MBR - na którym zapisane sa pozostałe parycje, ich miejsca , można tworzyc nieskończenie wiele 
+GPT - standard zapisu informacji o partycjach, pierwsza przyjmuje rolę MBR - na którym zapisane sa pozostałe partycje, ich miejsca , można tworzyc nieskończenie wiele 
 
 **XZSAWQ21**
-**HASŁO     xdddd**
+**xdddd**
 
 Instalacja w Winows i Linux
  W 
@@ -62,5 +68,15 @@ formaty instalatorów:
 - 
 
 
+System LINUX to KISS - zrób to najprościej jak potrafisz 
+
+Konfiguracja systemowa w linux przechowywana w jednym katalogu 
+
+System nie nalezy do użytkownika - założenie Microsoft 
+
+Dock - pasek z ikonami 
+
+w LINUX aby ukryć plik lub katalog jego nazwę poprzedza się kropką 
+ctrl+h - pliki ukryte (odkrywanie/ukrywanie w katalogu domowym)
 
 
