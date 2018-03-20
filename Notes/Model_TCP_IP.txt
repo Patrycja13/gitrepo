@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-20T09:58:46+01:00
+
+====== Model TCP IP ======
+Created wtorek 20 marzec 2018
+
+Uproszczony model OSI
+Stworzony aby pomóc w tyworzeniu odpornych na atak sieci komputerowych, potem stał się podstawą struktury internetu. 
+
+Pliki cookie - jeśli nawiązujemy połączenie  z serwisem za pomocą przeglądarki ...
+
+
+== Protokoły działające w warstwie aplikacji ==
+
+**DNS** – system nazw domenowych , protokół używany do odwzorowywania nazw w sieci Internet na adresy IP, 
+**HTTP**  – protokół używany do przesyłania plików tworzących strony
+**HTTPS**  – szyfrowana wersja protokołu HTTP, wykorzystująca szyfrowanie TLS
+SMTP  – protokół używany do przesyłania wiadomości poczty elektronicznej wraz z załącznikami,
+**POP3** — protokół używany do odbioru poczty elektronicznej,
+IMAP  – protokół używany do odbioru poczty elektronicznej, oprócz funkcji POP3, pozwala również na zarządzanie zdalnymi folderami znajdującymi się na serwerze,
+Telnet – protokół używany do emulacji terminala umożliwiający komunikację ze zdalnym urządzeniem,
+FTP  – protokół używany do interaktywnego przesyłania plików pomiędzy systemami,
+DHCP  – protokół używany do dynamicznej konfiguracji urządzeń, a dokładniej odpowiedzialny jest za przydzielanie adresów IP, adresu domyślnej bramy i adresów serwerów DNS,
+**SSH** — protokół używany do emulacji terminala sieciowego zapewniający szyfrowanie połączenia,
+NFS— protokół używany do udostępniania systemów plików (dysków sieciowych),
+SNMP —protokół zarządzania siecią, używany do konfiguracji urządzeń sieciowych i gromadzenie informacji na ich temat,
+SMB  protokół używany do udostępniania plików.
+
+
+== DNS ==
+
+**URL**- adres w pasku adresu przeglądarki, zaczyna się od **protokołu** (np.  http://  ) następnie **host** (www.) i **nazwy domenowe** [ wyrózniamy krajowe(pl)  i funkcjonalne (np. com, edu, gov , net, org, ) 
+Oprócz domen najwyższego poziomu są tez poddomeny to nazwy hosta które należą do domeny wyższego poziomu 
+
+Baza DNS jest bazą rozproszoną 
+**Komputerów**, które przechowują informacje o domenach (top level ? ) jest **13 na świecie** 
+
+Domenami krajowymi w Polsce zarządza **NASK** 
+
+Protokoły nie zadziałają jeśli nie skorzystają z protokołów działających w **warstwie transportowej** (TCP oraz  
