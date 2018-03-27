@@ -39,3 +39,55 @@ Baza DNS jest bazą rozproszoną
 Domenami krajowymi w Polsce zarządza **NASK** 
 
 Protokoły nie zadziałają jeśli nie skorzystają z protokołów działających w **warstwie transportowej** (TCP oraz  
+
+
+DHCP
+funkcjonuje w każdej sieci lokalnej 
+
+
+
+== Warstwa dostępu do sieci ==
+
+**Adres MAC (karta sieciowa)-** zapisywany za pomocą cyfr szesnastkowych. Adresy te są unikalne.
+Pierwsze trzy pary identyfikują producenta 
+Druga połowa adresu jest inna w każdym urządzeniu 
+Adres MAC można powiązac z konkretnym adresem IP
+
+
+ARP - protokół sieciowy. Powiązanie adresu IP z adresem sieciowym 
+
+ether - połączenie kablowe 
+
+Protokół Ethernet - najniższa warstwa modelu OSI
+
+
+**Kapsułkowanie danych** - do danych dołączane są nagłowki 
+
+TCP W WARSTWIE TRANSPORTOWEJ ! 
+
+
+== Gniazdo sieciowe ==
+
+Kojarzy wszystkie poziomy adresowania
+Posiada trzy główne właściwości:
+
+	typ gniazda identyfikujący protokół wymiany danych
+	lokalny adres (np. adres IP, IPX, czy Ethernet)
+	opcjonalny lokalny numer portu identyfikujący proces, który wymienia dane przez gniazdo (jeśli typ gniazda pozwala używać portów)
+
+
+== Polecenia do diagnostyki ==
+
+sprawdzanie z jakim hostem połaczenie 
+**ping i adres IP **wysyła pakiety 
+**netstat -nt** jakie aktywne połaczenia sieciowe 
+**ip addr** wyświetla 
+**ipconfig /all**
+**route**  konfiguracja bramy sieciowej 
+**dig** sprawdza konfiguracje serwera DNS
+**arp -n** wyświetla tablicę z adresami 
+
+**TCPView - narzędzie, którepokazuje połaczenia sieciowe** 
+
+
+
