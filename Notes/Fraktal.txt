@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-04-09T12:05:44+02:00
+
+====== Fraktal ======
+Created poniedziałek 09 kwiecień 2018
+
+Fraktal - obiekt samo-podobny (tzn. taki, którego części są podobne do całości) albo „nieskończenie subtelny” (ukazujący subtelne detale nawet w wielokrotnym powiększeniu). 
+Fraktal posiada wszystkie poniższe charakterystyki albo przynajmniej ich większość:
+
+	ma nietrywialną strukturę w każdej skali,
+	struktura ta nie daje się łatwo opisać w języku tradycyjnej geometrii euklidesowej,
+	jest samo-podobny, jeśli nie w sensie dokładnym, to przybliżonym lub stochastycznym,
+	jego wymiar Hausdorffa jest większy niż jego wymiar topologiczny,
+	ma względnie prostą definicję rekurencyjną,
+	ma naturalny („poszarpany”, „kłębiasty” itp.) wygląd.
+
+Na przykład linia prosta na płaszczyźnie jest formalnie samo-podobna, ale brak jej pozostałych cech i zwyczajowo nie uważa się jej za fraktal. Z drugiej strony, zbiór Mandelbrota ma wymiar Hausdorffa równy 2, taki sam jak jego wymiar topologiczny. Jednak pozostałe cechy wskazują, że jest to fraktal. Wiele fraktali ma niecałkowity wymiar Hausdorffa, co wyjaśnia etymologię nazwy.
