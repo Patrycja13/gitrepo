@@ -27,15 +27,15 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
      inkscape:cx="387.23578"
-     inkscape:cy="-16.533917"
+     inkscape:cy="139.65078"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1117"
-     inkscape:window-height="970"
-     inkscape:window-x="802"
-     inkscape:window-y="42"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,8 +63,7 @@
        transform="scale(0.26458333)"
        id="path815" />
     <g
-       aria-label="~
-"
+       aria-label="~ "
        transform="matrix(8.0236502,0,0,12.760692,-876.08848,-569.46129)"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.09882729;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="flowRoot817-5">
@@ -114,7 +113,7 @@
            height="99.968788"
            x="20.338188"
            y="1408.2651" /></flowRegion><flowPara
-         id="flowPara1512"></flowPara></flowRoot>    <flowRoot
+         id="flowPara1512" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot1514"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -124,7 +123,7 @@
            height="100"
            x="440"
            y="1308.234" /></flowRegion><flowPara
-         id="flowPara1520"></flowPara></flowRoot>    <flowRoot
+         id="flowPara1520" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot1522"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -135,5 +134,42 @@
            height="217.14285"
            x="-108.57143"
            y="-386.05176" /></flowRegion><flowPara
-         id="flowPara1528">Mat -fiz</flowPara></flowRoot>  </g>
+         id="flowPara1528">Mat -fiz</flowPara></flowRoot>    <g
+       aria-label="Mat-fiz &lt;3 "
+       style="font-style:normal;font-weight:normal;font-size:25.39999962px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       id="text40">
+      <path
+         d="m 26.547099,354.41009 h 3.733105 l 4.725293,12.60078 4.750098,-12.60078 H 43.4887 v 18.5167 h -2.443261 v -16.25947 l -4.774903,12.7 H 33.75286 l -4.774902,-12.7 v 16.25947 h -2.430859 z"
+         style="stroke-width:0.26458332"
+         id="path42" />
+      <path
+         d="m 54.688016,365.94427 q -2.765722,0 -3.832324,0.63252 -1.066601,0.63252 -1.066601,2.15801 0,1.21543 0.79375,1.93476 0.806152,0.70694 2.182812,0.70694 1.897559,0 3.038574,-1.33946 1.153418,-1.35185 1.153418,-3.58428 v -0.50849 z m 4.55166,-0.94258 v 7.9251 h -2.282031 v -2.1084 q -0.781347,1.26504 -1.947168,1.87275 -1.16582,0.59532 -2.852539,0.59532 -2.133203,0 -3.398242,-1.19063 -1.252637,-1.20303 -1.252637,-3.21221 0,-2.34404 1.562696,-3.53466 1.575097,-1.19063 4.688086,-1.19063 h 3.199804 v -0.22324 q 0,-1.5751 -1.041797,-2.43086 -1.029394,-0.86816 -2.902148,-0.86816 -1.190625,0 -2.319238,0.28525 -1.128614,0.28525 -2.17041,0.85576 v -2.1084 q 1.252636,-0.48369 2.430859,-0.71933 1.178223,-0.24805 2.294434,-0.24805 3.013769,0 4.50205,1.5627 1.488281,1.56269 1.488281,4.73769 z"
+         style="stroke-width:0.26458332"
+         id="path44" />
+      <path
+         d="m 66.209795,355.09222 v 3.94394 h 4.700488 v 1.77354 h -4.700488 v 7.54062 q 0,1.69912 0.458887,2.18282 0.471289,0.48369 1.897558,0.48369 h 2.344043 v 1.90996 H 68.56624 q -2.641699,0 -3.646289,-0.97979 -1.00459,-0.99218 -1.00459,-3.59668 v -7.54062 h -1.674316 v -1.77354 h 1.674316 v -3.94394 z"
+         style="stroke-width:0.26458332"
+         id="path46" />
+      <path
+         d="m 72.770636,364.95208 h 6.684863 v 2.03399 h -6.684863 z"
+         style="stroke-width:0.26458332"
+         id="path48" />
+      <path
+         d="m 94.325909,359.03616 v 13.89063 H 92.031475 V 360.8097 h -6.263183 v 12.11709 H 83.473858 V 360.8097 h -2.182812 v -1.77354 h 2.182812 v -0.96738 q 0,-2.26963 1.066602,-3.34863 1.079004,-1.09141 3.299023,-1.09141 h 2.294434 v 1.89756 h -2.182813 q -1.227832,0 -1.711523,0.49609 -0.471289,0.4961 -0.471289,1.78594 v 1.22783 z m -2.294434,-5.38261 h 2.294434 v 2.88974 h -2.294434 z"
+         style="stroke-width:0.26458332"
+         id="path50" />
+      <path
+         d="m 98.133427,359.03616 h 10.839653 v 2.0836 l -8.58243,9.98388 h 8.58243 v 1.82315 H 97.823368 v -2.0836 l 8.582422,-9.98388 h -8.272363 z"
+         style="stroke-width:0.26458332"
+         id="path52" />
+      <path
+         d="m 136.75433,360.42523 -12.79922,4.55166 12.79922,4.52685 v 2.25723 l -15.89981,-5.76709 v -2.05879 l 15.89981,-5.76709 z"
+         style="stroke-width:0.26458332"
+         id="path54" />
+      <path
+         d="m 149.75198,362.9429 q 1.79834,0.38447 2.80293,1.5999 1.01699,1.21543 1.01699,3.00137 0,2.74092 -1.88516,4.2416 -1.88515,1.50069 -5.35781,1.50069 -1.16582,0 -2.40605,-0.23565 -1.22783,-0.22324 -2.54248,-0.68213 v -2.41845 q 1.04179,0.60771 2.28203,0.91777 1.24023,0.31006 2.59209,0.31006 2.35644,0 3.58427,-0.93018 1.24024,-0.93017 1.24024,-2.70371 0,-1.63711 -1.15342,-2.55488 -1.14101,-0.93018 -3.1874,-0.93018 h -2.15801 v -2.05879 h 2.25723 q 1.84795,0 2.82773,-0.73173 0.97979,-0.74415 0.97979,-2.13321 0,-1.42627 -1.01699,-2.18281 -1.00459,-0.76895 -2.88975,-0.76895 -1.0294,0 -2.20762,0.22325 -1.17822,0.22324 -2.59209,0.69453 v -2.23242 q 1.42627,-0.39688 2.66651,-0.59532 1.25263,-0.19843 2.35644,-0.19843 2.85254,0 4.51445,1.30224 1.66192,1.28985 1.66192,3.49746 0,1.53789 -0.88057,2.6045 -0.88056,1.05419 -2.50527,1.46347 z"
+         style="stroke-width:0.26458332"
+         id="path56" />
+    </g>
+  </g>
 </svg>
