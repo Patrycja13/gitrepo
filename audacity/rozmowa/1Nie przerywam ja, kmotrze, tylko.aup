@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="1Nie przerywam ja, kmotrze, tylko_data" version="1.3.0" audacityversion="2.2.2" sel0="0.0000000000" sel1="4.2825850340" vpos="0" h="1.2995398690" zoom="135.4325513196" rate="22050.0" snapto="off" selectionformat="gg:mm:ss + milisekundy" frequencyformat="Hz" bandwidthformat="oktawy">
+	<tags/>
+	<wavetrack name="Nie przerywam ja, kmotrze, tylko" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="22050" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="94408">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808fc1.au" len="94408" min="-0.638267" max="0.807955" rms="0.159846"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="4.28154195" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="313">
+				<waveblock start="0">
+					<simpleblockfile filename="e08080df.au" len="313" min="-0.00012" max="0.000067" rms="0.000011"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
