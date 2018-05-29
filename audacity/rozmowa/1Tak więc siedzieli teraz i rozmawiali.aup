@@ -1,12 +1,12 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
-<project xmlns="http://audacity.sourceforge.net/xml/" projname="1Tak więc siedzieli teraz i rozmawiali_data" version="1.3.0" audacityversion="2.2.2" sel0="0.0000000000" sel1="7.5056689342" vpos="0" h="1.5417480166" zoom="114.1561384235" rate="22050.0" snapto="off" selectionformat="gg:mm:ss + milisekundy" frequencyformat="Hz" bandwidthformat="oktawy">
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="1Tak więc siedzieli teraz i rozmawiali_data" version="1.3.0" audacityversion="2.2.1" sel0="3.9682491564" sel1="3.9682491564" vpos="0" h="2.2951021611" zoom="114.1561384235" rate="22050.0" snapto="off" selectionformat="gg:mm:ss + milisekundy" frequencyformat="Hz" bandwidthformat="oktawy">
 	<tags/>
 	<wavetrack name="Tak więc siedzieli teraz i rozmawiali" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="22050" gain="1.0" pan="0.0" colorindex="0">
 		<waveclip offset="0.00000000" colorindex="0">
-			<sequence maxsamples="262144" sampleformat="262159" numsamples="163364">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="167420">
 				<waveblock start="0">
-					<simpleblockfile filename="e080846a.au" len="163364" min="-0.330368" max="0.558736" rms="0.10089"/>
+					<simpleblockfile filename="e0808f3d.au" len="167420" min="-0.330368" max="0.558736" rms="0.09966"/>
 				</waveblock>
 			</sequence>
 			<envelope numpoints="0"/>
