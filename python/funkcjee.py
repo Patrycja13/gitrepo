@@ -12,12 +12,22 @@ def wypelnij(lista, ile, maks):
         lista.append(random.randint(0, maks))
     return lista
 
+def drukuj(lista):
+    licznik = 0
+    for liczba in lista:
+        if not liczba % 2:
+            licznik += 1
+    print("Liczb parzystych ", licznik)
+            
+            
 def main(args):
     lista = []
     ile = 75
     maks = 100
     wypelnij(lista, ile, maks)
     print(lista )
+    drukuj(lista)
+    
     
     return 0
 
