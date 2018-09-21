@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-17T09:30:26+02:00
+
+====== sql ======
+Created poniedziałek 17 września 2018
+
+Normalizacja to bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowanych w bazie oraz wyeliminowanie potencjalnych anomalii (nadmiarowość informacji, trudność z uaktualnianiem informacji)
+
+Normalizacja w trzech krokach
+ 1 NF - ATOMOWOŚC DANYCH (Pierwsza postać normalna)
+Atomowośc - jedna kolumna przechowuje jeden typ informacji, nie zawiera kolekcji i posiada klucz główny. 
+
+2 NF (Druga postać normalna)
+Dzielimy tabelę na tyle tabel ile trzeba
+
+numerki to klucz podstawowy - do wyszukiwania dzięki niemu jest szybsze oraz indeksowania dlatego  musi być maksymalnie krótki 
+klucze INTEGER
+
+
+
+
+KLUCZ OBCY secondary key
+nazwa odpowiada
+typ taki sam jak klucz główny 
+
+3 NF
+ograniczamy rozmiar pól
+
+__ALT F2 SQLITESTUDIO__
+ 

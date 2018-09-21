@@ -19,7 +19,16 @@ def drukuj(lista):
             licznik += 1
     print("Liczb parzystych ", licznik)
             
-            
+         
+def suma_nieparzyste(lista):
+    """ Funkcja sumuje wszystkie liczby nieparzyste i z przekazanej listy i wyświetla tę sumę"""
+    
+    licznik = 0
+    for liczba in lista:
+        if not liczba % 2:
+            licznik += 2
+    print("Liczb nieparzystych ", licznik)
+    
 def main(args):
     lista = []
     ile = 75
@@ -27,7 +36,7 @@ def main(args):
     wypelnij(lista, ile, maks)
     print(lista )
     drukuj(lista)
-    
+    suma_nieparzyste(lista)
     
     return 0
 
