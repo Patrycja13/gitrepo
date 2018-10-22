@@ -6,11 +6,12 @@ import csv
 import sqlite3
 import os.path
 
+
 def czy_jest(plik):
     if not os.path.isfile(plik):
-        print("Plik {} nie istnieje". format(plik))
+        print("Plik {} nie istnieje!".format(plik))
         return False
-    return True 
+    return True
 
 
 def czytaj_dane(plik, separator=","):
@@ -18,66 +19,66 @@ def czytaj_dane(plik, separator=","):
     
     if not czy_jest(plik):
         return dane
-        
+    
     with open(plik, newline='', encoding='utf-8') as plikcsv:
-        tresc = csv.reader(plikcsv, delimiter=separator)
+        tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
         for rekord in tresc:
             dane.append(rekord)
-    print(dane)
+    
+    return dane
 
 
 def ile_kolumn(cur, tab):
-    """zlicza i zwraca licze kolumn w podanej tabeli"""
-    i = 0 
-    for kol in cur.execute("PRAGMA table_info('" + tab+"')"):
-        i+=1
+    """zlicza i zwraca liczbę kolumn w podanej tabeli"""
+    i = 0
+    for kol in cur.execute("PRAGMA table_info('" + tab + "')"):
+        i += 1
     return i
-    
+
+
 def main(args):
-    ### konfiguracja ###
+    ### KONFIGURACJA ###
     baza_nazwa = 'szkola'
     tabele = ['nazwiska', 'dane_osobowe', 'oceny']
-    
-    roz= '.txt'
+    roz = '.txt'
     naglowki = True
-    ##################
+    ####################
     
     con = sqlite3.connect(baza_nazwa + '.db')
     cur = con.cursor()  # obiekt tzw. kursora
     
     if not czy_jest(baza_nazwa + '.sql'):
-        return 
-
+        return
+    
     with open(baza_nazwa + '.sql', 'r') as plik:
         cur.executescript(plik.read())
-        
+    
     for tab in tabele:
         ile = ile_kolumn(cur, tab)  # liczba kolumn w tabeli
         dane = czytaj_dane(tab + roz, separator=',')
         ile_d = len(dane[0])
         
         if ile > ile_d:
-            dane2 = []  # tymczasowa lista 
+            dane2 = []  # tymczasowa lista
             for r in dane:
                 r.insert(0, None)
                 dane2.append(r)
             dane = dane2
-            
+
         if naglowki:
-            dane.pop(0)  # usuwamy rekord z nagłówkami w kolumnie 
-            
-            
-        ile = len(dane[0])    
-        cur.executemany('INSERT INTO' + tab + ' VALUES(' + ','.join(['?'] * ile)+')', dane)
-        
-        #pass
+            dane.pop(0)  # usuwamy rekord z nagłówkami kolumn
+
+        ile = len(dane[0])
+        cur.executemany('INSERT INTO ' +
+                        tab +
+                        ' VALUES(' +
+                        ','.join(['?'] * ile) +
+                        ')', dane)
+
     con.commit()
     con.close()
-    #czytaj_dane('nazwiska.txt', ' ')
-    #czytaj_dane('dane-osobowe.txt', '\t')
-    #czytaj_dane('oceny.txt', ' ')
-
     return 0
+
 if __name__ == '__main__':
     import sys
 sys.exit(main(sys.argv))
