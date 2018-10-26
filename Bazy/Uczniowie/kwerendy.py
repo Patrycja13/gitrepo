@@ -8,18 +8,31 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT AVG(pol) FROM nazwiska
-
+        SELECT klasa, COUNT(nazwisko) AS ilu FROM klasy
+        INNER JOIN uczniowie
+        ON klasy.id=uczniowie.id_klasa
+        GROUP BY klasa
+        ORDER BY ilu DESC
     """)
     
     # SELECT * FROM nazwiska WHERE nazwisko LIKE 'G*' 
     wyniki = cur.fetchall()
     for row in wyniki:
         print(tuple(row))
-    
-    
-        # oceny z przedmiotu
         
+        # SORTOWANIE WZGLĘDEM JAKIEGOŚ POLA
+        # ~SELECT klasa, nazwisko FROM klasy
+        # ~INNER JOIN uczniowie
+        # ~ON klasy.id=uczniowie.id_klasa
+        # ~ORDER BY klasa ASC
+    
+        # UCZNIOWIE KLASY 
+        # ~SELECT klasa, nazwisko, imie FROM klasy
+        # ~INNER JOIN uczniowie
+        # ~ON klasy.id=uczniowie.id_klasa
+        # ~WHERE klasa='1A'
+        
+        # oceny z przedmiotu
         # ~SELECT nazwisko, imie1, pol FROM nazwiska
         # ~INNER JOIN oceny
         # ~ON nazwiska.nr_ucznia=oceny.nr_ucznia
@@ -39,9 +52,10 @@ def kwerenda1(cur):
         
 def main(args):
     ### KONFIGURACJA ###
-    baza_nazwa = 'szkola'
-    tabele = ['nazwiska', 'dane_osobowe', 'oceny']
-    
+    baza_nazwa = 'uczniowie'
+    tabele = ['uczniowie', 'klasy', 'przedmioty', 'oceny']
+    roz = '.txt'
+    naglowki = True
     ####################
     
     con = sqlite3.connect(baza_nazwa + '.db')
@@ -51,7 +65,6 @@ def main(args):
     
     con.commit()
     con.close()
-    
     return 0
 
 if __name__ == '__main__':
