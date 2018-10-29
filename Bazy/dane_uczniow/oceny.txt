@@ -1,4 +1,4 @@
-Nr_ucz.,Zach.,Rel_Ety,Jpol,Jang,Jniem,Mat,Hist,Geog,Biol,Fiz,Che,Tech,Info,Plas,PO,WF
+Nr_ucz.,Zach.,Rel_Ety,Jpol,Jang,Jniem,Mat,Hist,Geog,Biol,Fiz,Che,Tech,Info,Plas,PO,WF             
 9806,dobre,,4,4,4,2,4,3,4,3,3,5,,5,5,
 9812,dobre,5,2,3,3,3,3,2,3,3,3,4,,4,3,
 9211,dobre,,3,5,5,3,2,3,3,2,3,,,,,3

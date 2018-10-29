@@ -17,6 +17,7 @@ def kwerenda1(cur):
     for row in wyniki:
         print(tuple(row))
     
+        # SELECT AVG(pol) FROM nazwiska
     
         # oceny z przedmiotu
         

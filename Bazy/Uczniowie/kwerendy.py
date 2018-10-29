@@ -8,17 +8,56 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT klasa, COUNT(nazwisko) AS ilu FROM klasy
-        INNER JOIN uczniowie
-        ON klasy.id=uczniowie.id_klasa
-        GROUP BY klasa
-        ORDER BY ilu DESC
+        SELECT nazwisko, AVG(ocena) AS srednia, klasa FROM uczniowie
+        INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+        INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
+        GROUP BY uczniowie_id
     """)
     
     # SELECT * FROM nazwiska WHERE nazwisko LIKE 'G*' 
     wyniki = cur.fetchall()
     for row in wyniki:
         print(tuple(row))
+        
+        
+        # SREDNIA KLASY 
+        # ~SELECT AVG(ocena) AS srednia, klasa FROM uczniowie
+        # ~INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+        # ~INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
+        # ~GROUP BY klasa
+        # ~ORDER BY srednia DESC
+        
+        # ~SELECT imie,nazwisko, AVG(ocena), klasa AS srednia FROM uczniowie
+        # ~INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+        # ~INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
+        # ~GROUP BY klasa
+        
+        # ZLICZANIE OSÓB Z TAKĄ ŚREDNIĄ 
+        # ~WITH srednie AS (
+            # ~SELECT imie,nazwisko, AVG(ocena) AS srednia FROM uczniowie
+            # ~INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+            # ~GROUP BY id_uczen
+        # ~) SELECT COUNT(imie) FROM srednie
+          # ~WHERE srednia > 3.8
+        
+        # WYBIERANIE Z TABELI ŚREDNIEJ POWYŻEJ...
+        # ~WITH srednie AS (
+            # ~SELECT imie,nazwisko, AVG(ocena) AS srednia FROM uczniowie
+            # ~INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+            # ~GROUP BY id_uczen
+        # ~) SELECT imie, nazwisko, srednia FROM srednie
+          # ~WHERE srednia > 3.8
+        
+        
+        # group by i where nie można stosowac razem ! 
+        
+        
+        # 10 NAJLEPSZYCH UCZNIÓW, GDZY 10 NAJGORSZYCH ZAMIAST DESC - ASC
+        # ~SELECT imie,nazwisko, AVG(ocena) AS srednia FROM uczniowie
+        # ~INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+        # ~GROUP BY id_uczen
+        # ~ORDER BY srednia DESC
+        # ~LIMIT 10 
         
         # SORTOWANIE WZGLĘDEM JAKIEGOŚ POLA
         # ~SELECT klasa, nazwisko FROM klasy
