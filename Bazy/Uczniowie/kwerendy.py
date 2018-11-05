@@ -8,10 +8,12 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT nazwisko, AVG(ocena) AS srednia, klasa FROM uczniowie
-        INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
-        INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
-        GROUP BY uczniowie_id
+        WITH srednie AS(
+            SELECT nazwisko, AVG(ocena) AS srednia, klasa FROM uczniowie
+            INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+            INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
+            GROUP BY uczniowie_id
+            )
     """)
     
     # SELECT * FROM nazwiska WHERE nazwisko LIKE 'G*' 
