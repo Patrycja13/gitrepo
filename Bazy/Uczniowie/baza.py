@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 #
 #  baza.py
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  baza.py
 import csv
 import sqlite3
 import os.path
@@ -29,7 +33,7 @@ def czytaj_dane(plik, separator=","):
 
 
 def ile_kolumn(cur, tab):
-    """zlicza i zwraca liczbę kolumn w podanej tabeli"""
+    """zlicza i zwraca liczbÄ kolumn w podanej tabeli"""
     i = 0
     for kol in cur.execute("PRAGMA table_info('" + tab + "')"):
         i += 1
@@ -66,7 +70,7 @@ def main(args):
             dane = dane2
 
         if naglowki:
-            dane.pop(0)  # usuwamy rekord z nagłówkami kolumn
+            dane.pop(0)  # usuwamy rekord z nagĹĂłwkami kolumn
 
         ile = len(dane[0])
         cur.executemany('INSERT INTO ' +
@@ -81,4 +85,4 @@ def main(args):
 
 if __name__ == '__main__':
     import sys
-sys.exit(main(sys.argv))
+    sys.exit(main(sys.argv))
