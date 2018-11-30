@@ -4,57 +4,64 @@
 #  orm_peewee.py
 #  
 
-import os 
-from peewee import * 
- 
-baza_nazwa = 'test.db' # zmienna globalna
-baza = SqliteDatabase(baza_nazwa) # instalacja bazy 
+import os
+from uczniowie_model import * 
+import csv
 
-
-### modele ###
-class KlasaBaza(Model):
-     class Meta:
-        database = baza
-        
-class Klasa(KlasaBaza): # Definicja klasy o nazwie Klasa
-    klasa = CharField(null=False)
-    rok_naboru = CharField(null=False)
-    rok_matury= CharField(null=False)
-        
-class Uczen(KlasaBaza): # Definicja klasy o nazwie Klasa
-    imie = CharField(null=False)
-    nazwisko = CharField(null=False)
-    plec = BooleanField()
-    egzhum = FloatField(default=0)
-    egzmat = FloatField(default=0)
-    egzjez = FloatField(default=0)
-    klasa = ForeignKeyField(Klasa)
+def czy_jest(plik):
+    if not os.path.isfile(plik):
+        print("Plik {} nie istnieje!".format(plik))
+        return False
+    return True
     
-        
-class Przedmiot(KlasaBaza): # Definicja klasy o nazwie Klasa
-    przedmiot = CharField(null=False)
-    imie_naucz = CharField(null=False)
-    nazwisko_naucz = CharField(null=False)
-    plec_naucz = BooleanField()
-
+def czytaj_dane(plik, separator=","):
+    dane = []  # pusta lista na rekordy
     
-class Ocena(KlasaBaza): # Definicja klasy o nazwie Klasa
-    datad = DateField(null=False)
-    ocena = FloatField(default=0)
-    uczen = ForeignKeyField(Uczen)
-    przedmiot = ForeignKeyField(Przedmiot)
-
+    if not czy_jest(plik):
+        return dane
+    
+    with open(plik, newline='', encoding='utf-8') as plikcsv:
+        tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
+        for rekord in tresc:
+            dane.append(tuple(rekord))
+    
+    return dane
+    
+def dodaj_dane(dane):
+    for model, plik in dane.items():
+        print(model._meta.fields)
+        pola = [pole for pole in model._meta.fields]
+        pola.pop(0)
+        print(pola)
+        
+        wpisy = czytaj_dane(plik + '.csv')
+        model.insert_many(wpisy, fields=pola).execute()
+        # print(wpisy)
+        
+        
 def main(args):
     
     if os.path.exists(baza_nazwa):
         os.remove(baza_nazwa)
-        
-    baza.connect() # połączenie z bazą
-    baza.create_tables([Klasa, Uczen,Przedmiot, Ocena]) # bez ''( nie tak ! 'klasa')  bo to nie napisy - Mapowanie obiektowo relacyjnie OMR - przetłumaczenie z jednego sposobu zapisu do drugiego 
+    baza.connect()  # połączenie z bazą
+    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])   #mapowanie ORM (odwzorować)
     
+    dane = {
+        Klasa: 'klasy',
+        Uczen: 'uczniowie',
+        Przedmiot: 'przedmioty',
+        Ocena: 'oceny'
+    
+    }
+    
+    
+    dodaj_dane(dane)
+    
+    baza.commit()
+    baza.close()
     
     return 0
 
 if __name__ == '__main__':
     import sys
-    sys.exit(main(sys.argv))
+sys.exit(main(sys.argv))
