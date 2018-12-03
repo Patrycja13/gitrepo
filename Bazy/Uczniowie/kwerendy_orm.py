@@ -46,7 +46,7 @@ def kw03():
         print(obj.uczen.nazwisko, obj.ocena)
         
 def kw04():
-    # i po ile ocen mają uczniowie 
+    # po ile ocen mają uczniowie 
     query = (Ocena
         .select(Ocena.uczen.nazwisko, fn.Count(Ocena.ocena).alias('ile'))
         .join(Uczen)
@@ -56,15 +56,66 @@ def kw04():
     
     for obj in query:
         print(obj.uczen.nazwisko, obj.ile)
-                
+        
+def kw05(): 
+    # po ile uczniów w klasie
+    query = (Uczen
+        .select(Uczen.klasa.klasa, fn.Count(Uczen.nazwisko).alias('ile'))
+        .join(Klasa)
+        .group_by(Uczen.klasa.klasa)
+        .order_by(SQL('ile').desc())
+    )
+    
+    for obj in query:
+        print(obj.ile, obj.klasa.klasa)
+        
+def kw06():
+    # średnia ocen z przedmiotów
+    query = (Ocena
+        .select(Ocena.przedmiot.przedmiot, fn.AVG(Ocena.ocena).alias('srednia'))
+        .join(Przedmiot)
+        .group_by(Ocena.przedmiot.przedmiot)
+        .order_by(SQL('srednia').asc())
+    )
+    
+    for obj in query:
+        print(obj.przedmiot.przedmiot, obj.srednia)
+
+def kw07():
+    # średnia ocen uczniów
+    query = (Ocena
+        .select(Ocena.uczen.nazwisko, fn.AVG(Ocena.ocena).alias('srednia'))
+        .join(Uczen)
+        .group_by(Ocena.uczen.nazwisko)
+        .order_by(SQL('srednia').asc())
+    )
+    
+    for obj in query:
+        print(obj.uczen.nazwisko, obj.srednia)
+
+def kw08():
+    # oceny konkretnego ucznia ... z poszczególnych przedmiotów 
+    query = (Uczen
+        .select(Ocena.uczen.nazwisko, Przedmiot.przedmiot)
+        .where(Uczen.nazwisko == 'Szymczak')
+        .join(Uczen)
+
+    )
+    
+    for obj in query:
+        print(obj.ocena.nazwisko)
+        
 def main(args):
     baza.connect()
     
     # kw01()
     # kw02()
     # kw03()
-    kw04()
-    
+    # kw04()
+    # kw05()
+    # kw06()
+    # kw07()
+    kw08()
     baza.close()
     return 0
 
