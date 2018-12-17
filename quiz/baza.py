@@ -6,7 +6,7 @@
 import sqlite3
 import csv
 import os.path
-from modele import *
+from gawel_model import *
 
 def czy_jest(plik):
     """ Funkcja sprawdza istnienie pliku na dysku """
@@ -40,14 +40,14 @@ def main(args):
     if os.path.exists(baza_plik):
         os.remove(baza_plik)
     baza.connect()
-    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])
+    baza.create_tables([Kategoria, Pytanie, Odpowiedz])
     
-    # ~dane = {
-        # ~Klasa: 'klasy',
-        # ~Uczen: 'uczniowie',
-        # ~Przedmiot: 'przedmioty',
-        # ~Ocena: 'oceny',
-    # ~}
+    dane = {
+        Kategoria: 'kategoria',
+        Pytanie: 'pytanie',
+        Odpowiedz: 'odpowiedź',
+
+    }
     
     # ~dodaj_dane(dane)
     

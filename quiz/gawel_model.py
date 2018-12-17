@@ -24,13 +24,14 @@ class Kategoria(QuizBaza):
 
 class Pytanie(QuizBaza):
     pytanie = CharField(null=False)
-    id_kat = ForeignKeyField(Kategoria, related_name='id')
+    kategoria = ForeignKeyField(Kategoria, related_name='pytanie')
 
 
 class Odpowiedz(QuizBaza):
-    id_p = ForeignKeyField(Pytanie, related_name='id')
+
     odpowiedz = CharField(null=False)
-    odpok = BooleanField(default=0)
+    pytanie = ForeignKeyField(Kategoria, related_name='odpowiedz')
+
 
 
 def main(args):
