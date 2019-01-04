@@ -8,7 +8,7 @@ from modele import *
 from views import *
 
 @app.before_request
-def before_request():
+def before_request:
     g.db = baza
     g.db.connect()
 

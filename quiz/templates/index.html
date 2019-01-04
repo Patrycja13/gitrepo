@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--
+   templates/index.html
+-->
+
+<head>
+<meta charset="utf-8" />
+    <title>Aplikacja QUIZ</title>
+    <style type= "text/css">
+        #menu li {display: inline; margin_left: 1em;}
+    </style>
+</head>
+
+<body>
+    <ul id="menu">
+        <li><a href="{{ url_for('hello') }}" >Strona główna</a></li>
+        <li><a href="{{ url_for('lista') }}" >Lista</a></li>
+        <li><a href="{{ url_for('quiz') }}" >Quiz</a></li>
+    <ul>
+
+    <h1>Aplikacja QUIZ</h1>
+    <p>Pytania i odpowiedzi</p>
+
+</body>
+
+
+</html>
