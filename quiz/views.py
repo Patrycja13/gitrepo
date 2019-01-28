@@ -6,7 +6,7 @@
 
 
 from flask import Flask
-from flask import render_template,request
+from flask import render_template, request, flash, redirect, url_for
 
 from modele import Kategoria, Pytanie, Odpowiedz
 
@@ -27,13 +27,15 @@ def lista():
 
 @app.route("/quiz", methods=['GET','POST'])
 def quiz():
-    
+
     print(request.form)
-    
-    if request.method == 'POST'
+
+    if request.method == 'POST':
         wynik = 0
         for pid, oid in request.form.items():
-            if Odpowiedz().get(Odpowiedz.id == int(oid)).odpok;
-            wynik += 1
+            if Odpowiedz().get(Odpowiedz.id == int(oid)).odpok:
+                wynik += 1
+        flash('Poprawne odpowiedzi: {}'.format(wynik),'info')
+        return redirect(url_for('hello'))
     pytania = Pytanie().select().join(Odpowiedz).distinct()
     return render_template('quiz.html', pytania=pytania)
