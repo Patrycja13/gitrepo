@@ -8,7 +8,7 @@ from modele import *
 from views import *
 
 app.config.update(dict(
-    SECRET_KEY='przypadkowewartości'
+    SECRET_KEY='bardzotajnyklucz',
 ))
 
 @app.before_request
