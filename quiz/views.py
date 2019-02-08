@@ -4,7 +4,7 @@
 #  views.py
 
 from flask import Flask
-from flask import render_template, request, flash, redirect, url_for
+from flask import render_template, request, flash, redirect, url_for, abort
 from modele import Kategoria, Pytanie, Odpowiedz
 from forms import *
 
@@ -72,6 +72,55 @@ def dodaj():
     
     return render_template('dodaj.html', form=form)
 
-@app.route("/usun", methods=['GET', 'POST'])
+def get_or_404(pid):
+    try:
+        p = Pytanie.get_by_id(pid)
+        return p
+    except Pytanie.DoesNotExist:
+        abort(404)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+@app.route("/usun/<int:pid>", methods=['GET', 'POST'])
 def usun(pid):
-    p = get or 404(pid)
+    p = get_or_404(pid)
+    if request.method == "POST":
+        flash("Usunięto pytanie: {}".format(p.pytanie))
+        for o in Odpowiedz.select().where(Odpowiedz.pytanie == p.id):
+            o.delete_instance()
+        p.delete_instance()
+        return redirect(url_for('lista'))
+    return render_template('usun.html', pytanie=p)
+
+@app.route("/edytuj/<int:pid>", methods=['GET', 'POST'])
+def edytuj(pid):
+    p = get_or_404(pid)
+    
+    form = DodajForm(obj=p)
+    form.kategoria.choices = [(k.id, k.kategoria) for k in Kategoria.select()]
+    form.kategoria.data = p.kategoria.id
+    
+    if form.validate_on_submit():
+        p.pytanie = form.pytanie.data
+        p.kategoria = form.kategoria.data
+        p.save()
+        for o in form.odpowiedzi.data:
+            odp = Odpowiedz.get_by_id(o['id'])
+            odp.odpowiedz = o['odpowiedz']
+            odp.odpok = int(o['odpok'])
+            odp.save()
+        flash("Zaktualizowano pytanie: {}".format(form.pytanie.data))
+        return redirect(url_for('lista'))
+    
+    elif request.method == 'POST':
+        flash_errors(form)
+    
+    odpowiedzi = []
+    for o in Odpowiedz.select().where(Odpowiedz.pytanie == p.id).dicts():
+        odpowiedz.append(o)
+    form.odpowiedz(data=odpowiedzi)
+        
+    return render_template('edytuj.html', form=form)
