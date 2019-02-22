@@ -120,7 +120,7 @@ def edytuj(pid):
     
     odpowiedzi = []
     for o in Odpowiedz.select().where(Odpowiedz.pytanie == p.id).dicts():
-        odpowiedz.append(o)
+        odpowiedzi.append(o)
     form.odpowiedz(data=odpowiedzi)
         
     return render_template('edytuj.html', form=form)
