@@ -70,6 +70,47 @@ int liczZnaki(char nazwa[]) {
     
 }
 
+int zapiszCyfry(char nazwa[]) {
+    char kopia[15];
+    //zmienNazwe2(nazwa, kopia);
+    cout << kopia << endl;
+    
+    //otwieranie pliku
+    ifstream wejscie(nazwa);
+    if (!wejscie) {cout << "Brak pliku!"; return 1;}
+    
+    ofstream wyjscie(kopia);
+    if (!wyjscie) {cout << "Brak pliku!"; return 1;}
+    
+    char znak;
+    int ile, ileal, ilenum, ilealnum;
+    ile = ileal = ilenum = ilealnum = 0;
+    
+    while(!wejscie.eof()) {
+        wejscie.get(znak); // odczytanie poj. znaku
+        if ( (wejscie && isdigit(znak)) || (znak == '.')); 
+            wyjscie put(znak);
+            
+        if ((int)znak == 10)
+            wyjscie.put('\n');
+    }
+    
+    wejscie.close(); wyjscie.close();
+
+}
+
+void sumuj(char nazwa []){
+    ifstream wejscie(nazwa);
+    float liczba;
+    float suma = 0;
+    while(!wejscie.eof()) {
+        wejscie >> liczba;
+        suma+= liczba;
+    }
+    cout<<"Suma "<< suma << endl;s
+    
+}
+
 
 int main(int argc, char **argv)
 {
@@ -78,6 +119,7 @@ int main(int argc, char **argv)
     cin.getline(nazwa, 15);
     cout << nazwa << endl;
     liczZnaki(nazwa);
+    zapiszCyfry(nazwa);
     
         
 	return 0;
