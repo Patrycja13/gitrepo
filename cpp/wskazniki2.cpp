@@ -20,7 +20,8 @@ int main(int argc, char **argv)
     cout << wsk1 << endl;
     tab[0]= 10 ;
     *wsk1 = 10; // nazwa tablicy wskaznikiem do pierwszej komórki 
-
+    wsk1++; // wskazuje następną komórkę tablicy bo po 4 większe xddddd 
+    *wsk1 = 12;
 	return 0;
 }
 
